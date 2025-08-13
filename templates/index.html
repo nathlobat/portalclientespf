@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <title>Portal Cliente PF</title>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+  <style>
+    .sidenav li > a {
+      height: auto;
+      line-height: normal;
+      white-space: normal;
+      padding: 8px 16px;
+    }
+    main {
+      margin-left: 300px;
+      padding: 20px;
+    }
+    @media (max-width: 992px) {
+      main {
+        margin-left: 0;
+      }
+    }
+  </style>
+</head>
+<body>
+  <!-- Side navigation -->
+  <ul id="slide-out" class="sidenav sidenav-fixed">
+    <li>
+      <div class="user-view">
+        <div class="background blue"></div>
+        <span class="white-text name">Portal Cliente PF</span>
+      </div>
+    </li>
+    <li>
+      <ul class="collapsible">
+        <li>
+          <div class="collapsible-header"><i class="material-icons">people</i>Clientes</div>
+          <div class="collapsible-body">
+            <ul>
+              <li><a href="#">Consultar Clientes</a></li>
+              <li><a href="#">Consultar clientes por nº de Cartão</a></li>
+              <li><a href="#">Consultar Relacionamento do Cliente x Banco</a></li>
+              <li><a href="#">Consultar Clientes com Reclamações</a></li>
+            </ul>
+          </div>
+        </li>
+      </ul>
+    </li>
+  </ul>
+
+  <nav class="blue hide-on-large-only">
+    <div class="nav-wrapper">
+      <a href="#" data-target="slide-out" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+    </div>
+  </nav>
+
+  <main>
+    <h1>Bem-vindo ao Portal Cliente PF</h1>
+    <p>Selecione uma opção no menu.</p>
+  </main>
+
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      var elems = document.querySelectorAll('.sidenav');
+      M.Sidenav.init(elems);
+      var collapses = document.querySelectorAll('.collapsible');
+      M.Collapsible.init(collapses);
+    });
+  </script>
+</body>
+</html>
