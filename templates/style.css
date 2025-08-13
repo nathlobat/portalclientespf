@@ -1,0 +1,18 @@
+.sidenav .collapsible-header,
+.sidenav .collapsible-body li a {
+  height: auto;
+  line-height: normal;
+  white-space: normal;
+  padding: 8px 16px;
+}
+
+main {
+  margin-left: 300px;
+  padding: 20px;
+}
+
+@media (max-width: 992px) {
+  main {
+    margin-left: 0;
+  }
+}
