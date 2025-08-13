@@ -33,4 +33,3 @@ Portal Clientes PF - teste.
    ```
 4. Após a mensagem *Serving at port 8000*, abra o navegador e acesse [http://localhost:8000](http://localhost:8000).
 5. Utilize o menu lateral para explorar os módulos disponíveis.
-
